@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/81025ac2f6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form__wrapper">
+      <form action="#">
+        <h1>Login form</h1>
+        <div class="input__wrapper">
+          <div class="input__container">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" class="dady" />
+            <i class="fa-solid fa-ghost icon"></i>
+          </div>
+          <div class="input__container last">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" class="dady" />
+            <i class="fa-sharp fa-solid fa-key icon"></i>
+          </div>
+          <div class="input__container">
+            <a href="#">Forgot password</a>
+          </div>
+          <div class="input__container checkbox">
+            <input type="checkbox" id="checkbox" checked />
+            <label for="">Keep me logged in</label>
+          </div>
+        </div>
+        <div class="buttons__wrapper">
+          <button class="register">Register</button>
+          <button class="login">Log in</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
