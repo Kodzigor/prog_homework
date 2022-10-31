@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="#" class="form">
+      <div class="form__container">
+        <label for="name">Твоє ім'я</label>
+        <span class="span"><input type="text" id="name" class="narrow" /></span>
+      </div>
+      <div class="form__container">
+        <label for="email">Твій email</label>
+        <span class="span"
+          ><input type="email" id="email" class="narrow"
+        /></span>
+      </div>
+      <div class="form__container">
+        <label for="email">Тема сообщения</label>
+        <span class="span"
+          ><select name="theme" id="theme" class="narrow">
+            <option value=""></option>
+            <option value="Заказы">Заказы</option>
+            <option value="Доставка">Доставка</option>
+          </select></span
+        >
+      </div>
+      <div class="form__container">
+        <label for="textarea" class="label__top"
+          >Текст
+          <span>*</span>
+        </label>
+        <span>
+          <textarea
+            class="textarea"
+            name="textarea"
+            id="textarea"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </span>
+      </div>
+      <div class="form__container">
+        <label for="email"
+          >Защита от спама
+          <span>*</span>
+        </label>
+        <div class="captcha__wrapper">
+          <div class="span captcha__input">
+            <input type="email" id="email" />
+          </div>
+          <div class="captcha__img">Captcha</div>
+          <div><a href="#" class="captcha__link">сменить картинку</a></div>
+        </div>
+      </div>
+      <div class="form__container submit">
+        <label for="submit"></label>
+        <span class="span"
+          ><input type="submit" id="submit" class="submit__btn"
+        /></span>
+      </div>
+    </form>
+  </body>
+</html>
