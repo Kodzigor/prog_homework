@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: azure;
+}
+a {
+  text-decoration: none;
+}
+
+.menu__wrapper {
+  width: 300px;
+  min-height: 300px;
+  background-color: #2b2f32;
+  padding: 30px;
+}
+
+.menu__list {
+  list-style-type: none;
+}
+.menu__item {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  border-width: 2px;
+  border-style: inset;
+  border-color: #333333;
+  transition: all 0.3s ease;
+}
+
+.menu__item:hover {
+  cursor: pointer;
+  background-color: #202427;
+}
