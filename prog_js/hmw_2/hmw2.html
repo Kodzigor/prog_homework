@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /* 1. Среди трех чисел найти среднее арифметическое. Если среди чисел есть равные, вывести сообщение "Ошибка". Числа принять от пользователя. */
+
+      let first = +prompt("Введіть перше число", "");
+      let second = +prompt("Введіть друге число", "");
+      let third = +prompt("Введіть третє число", "");
+      if (first === second || first === third || second === third) {
+        alert("Помилка");
+      } else {
+        let result = (first + second + third) / 3;
+        alert(`Середнє арифметичне дорінює ${result}`);
+      }
+
+      /* 2. Построить прямоугольный треугольник состоящий из символа "*".*/
+      let triangleLength = 8;
+      let resString = "";
+
+      for (let i = 1; i <= triangleLength; i++) {
+        for (let j = 1; j <= i; j++) {
+          resString += "*";
+        }
+        if (resString.length >= i) {
+          resString += "\n";
+        }
+      }
+      // console.log(resString);
+      alert(resString);
+
+      /* 3. Определить какое из трех, введенных пользователем, чисел максимальное и вывести его на экран. */
+
+      alert(`Максимальне число дорівнює ${Math.max(first, second, third)}`);
+
+      /* 4. Дано два числа A и B где (A<B).
+      Выведите на экран суму всех чисел расположенных в числовом промежутке от А до В.
+      Выведите на экран все нечетные значения, расположенные в числовом промежутке от А до В. */
+
+      let aNum = +prompt("Введіть перше число", "");
+      let bNum = +prompt("Введіть друге число", "");
+      let sum = 0;
+      let strOfOdds = "";
+      for (let i = aNum + 1; i < bNum; i++) {
+        sum += i;
+        if (i % 2 !== 0) {
+          strOfOdds += i;
+          strOfOdds += ",";
+        }
+      }
+      alert(`Сума чисел між ${aNum} та ${bNum} дорінює ${sum}`);
+      alert(`Послідовність непарних чисел ${strOfOdds}`);
+
+      /* 5. Вывести на экран ряд чисел Фибоначчи, состоящий из n элементов (n принять от пользователя).
+         Числа Фибоначчи – это элементы числовой последовательности, в которой каждое последующее число равно сумме двух предыдущих. */
+
+      let n = +prompt("Введіть бажану кількість чисел Фібоначчі", "");
+      let a = 0;
+      let b = 1;
+      let fibonacciString = "";
+
+      for (let i = 0; i <= n; i++) {
+        let c;
+        c = a + b;
+        fibonacciString += ` ${a}`;
+        a = b;
+        b = c;
+      }
+      alert(`Ваша послідовність Фібоначчі ${fibonacciString}`);
+
+      /* 6. Вывести на экран таблицу умножения от 0 до 9. */
+    </script>
+  </body>
+</html>
