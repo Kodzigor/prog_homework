@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="modal">
+      <div class="modal-buttons">
+        <span class="modal-btn" id="singIn">Sign Up</span>
+        <span class="modal-btn active" id="logIn">Log In</span>
+      </div>
+      <h2 class="modal-title">Welcome Back!</h2>
+      <form action="#" class="modal-form">
+        <div class="modal-wrapper">
+          <div class="modal-personal">
+            <div class="input-wrapper">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" />
+            </div>
+            <div class="input-wrapper">
+              <label for="secondName">Second Name</label>
+              <input type="text" id="secondName" />
+            </div>
+          </div>
+          <div class="input-wrapper">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" />
+          </div>
+          <div class="input-wrapper">
+            <label for="password" class="password">Password</label>
+            <input type="password" id="password" />
+          </div>
+          <span class="reminder">Forgot Password?</span>
+        </div>
+      </form>
+      <button class="modal-submit">LOG IN</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
