@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import data from "./data";
+import './style.css'
 
 function App() {
   return (
