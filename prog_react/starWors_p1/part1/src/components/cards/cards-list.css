@@ -1,0 +1,12 @@
+.cards-list {
+  min-width: 800px;
+  width: 1200px;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  /* background-color: ; */
+  padding: 10px;
+}
